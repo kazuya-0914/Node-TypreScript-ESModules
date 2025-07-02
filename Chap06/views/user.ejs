@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ユーザー一覧</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="m-auto">
+    <header class="p-4">
+      <h3>ユーザー一覧</h3>
+    </header>
+  
+    <main>
+      <ul>
+        <% for (const user of users) { %>
+        <li><%= user.name %></li>
+        <li class="user"><%= user.name %></li>
+        <% } %>
+      </ul>
+    </main>
+
+    <footer>
+
+    </footer>
+  </div>
+<script src="/static/index.js" defer></script>
+</body>
+</html>
